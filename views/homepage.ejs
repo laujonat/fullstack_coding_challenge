@@ -5,17 +5,8 @@
 
   <div id="cardcontain">
 
-        <!-- // empty when first load page -->
-        <!-- // Using 'cards' directive  -->
-        <!-- <div ng-controller="CardController"></div> -->
-        <cards cards="cardCtrl.cards" next="cardCtrl.goNext" action="cardCtrl.action"></cards>
-        <!-- cards.js -->
 
-        <!-- scope: {
-          cards: '=',
-          next: '=',
-          action: '=?'
-        }, -->
+        <cards cards="cardCtrl.cards" next="cardCtrl.goNext" action="cardCtrl.action"></cards>
 
 
         <div class="like-button" ng-click="cardCtrl.like()">

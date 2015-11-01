@@ -2,31 +2,24 @@
 
 var app = angular.module('tinderChallenge');
 
-// Defining for EACH card
-// http://www.jeremyzerr.com/angularjs-directive-best-practices
-app.directive('card', [ function () {
 
+app.directive('card', [ function () {
 
     var ctrl = function(){
 
     };
 
     return {
-
-
-      // What is this? '=?'
       scope: {
         ngModel: '=',
         action: '=?'
       },
 
 
-      // restrict matches element name
       restrict: 'E',
       controller: 'CardController',
 
 
-      // replace with directive's template
       replace: true,
       templateUrl: 'templates/card.html',
 
@@ -34,12 +27,10 @@ app.directive('card', [ function () {
       link: function(scope, elem, attrs, CardController) {
 
         var mc = new Hammer(elem[0]);
-        var card = angular.element(elem[0]); // how does this define card?
+        var card = angular.element(elem[0]);
 
-        // ng-model="card"  action="action" -> 'like'
         scope.$watch(function() {
 
-          // at initialization, card.swipe -> set all to false
           return scope.ngModel.swipe;
 
         }, function() {
@@ -48,18 +39,15 @@ app.directive('card', [ function () {
           if(scope.ngModel.swipe) {
 
             if(scope.action === 'like') {
-              // if action is currently set to 'like'
 
               card.addClass('rotate-left');
               card.append('<div class="status like">Like</div>');
 
 
             } else {
-              // action is currently set to 'dislike'
               card.addClass('rotate-right');
               card.append('<div class="status dislike">Nope</div>');
             }
-            // reset to false
             scope.ngModel.swipe = false;
           }
 
@@ -72,7 +60,6 @@ app.directive('card', [ function () {
               card.addClass('rotate-left');
               card.append('<div class="status like">Like</div>');
 
-              // attrs.cntrl = true;
               CardController.goNext = true;
 
           } else {

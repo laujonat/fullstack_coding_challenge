@@ -1,18 +1,6 @@
-// var app = angular.module('myApp', []);
-// app.controller('myCtrl', function($scope) {
-//     $scope.firstName= "John";
-//     $scope.lastName= "Doe";
-// });
-
-
-
 var app = angular.module('tinderChallenge');
 
 app.controller('CardController', ['cardService', function (cardService) {
-// app.controller({})
-
-
-// Using cardService to bind data
 
   var vm = this;
 
@@ -20,11 +8,6 @@ app.controller('CardController', ['cardService', function (cardService) {
   this.cards = [];
   this.me = {};
 
-
-  // not working!!
-  this.swiped = function() {
-      this.goNext = true;
-  };
 
 
   this.goNext = false;
@@ -35,11 +18,8 @@ app.controller('CardController', ['cardService', function (cardService) {
   cardService.find()
   .then(function(data) {
 
-      // adding cards and me properties to objects
         vm.cards = data.tinders;
         vm.me = data.me;
-
-        // cards and me accessible in the views with directives
 
   });
 
