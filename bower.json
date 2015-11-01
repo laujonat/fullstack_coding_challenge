@@ -1,0 +1,26 @@
+{
+  "name": "bower.json",
+  "description": "bower dependencies",
+  "main": "app.js",
+  "authors": [
+    "JonathanMac"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/laujonat/TinderChallenge",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+    "bootstrap": "~3.3.5",
+    "standardizer": "vanilla.js#~2.0.0",
+    "hammerjs": "~2.0.4",
+    "angular": "~1.4.7"
+    
+  }
+}

@@ -1,0 +1,73 @@
+
+
+<div id="cardcontain">
+
+
+
+      <!-- <ul style="list-style-type: none"> -->
+          <% for(var i=1; i<tinder.length; i++) { %>
+              <!-- <li> -->
+                <div class="card" style="display: block;">
+                  <div id="profile" style="display: block;">
+                    <img style="height: 100%; overflow: hidden" src='<%= tinder[i].imgURL %>' />
+                  </div>
+                  <div class="identifier">
+                    <%= tinder[i].name %>,
+                    <%= tinder[i].age %>
+
+                  </div>
+                </div>
+
+                <div>
+                  <!-- <%= tinder[i].mutualIntrests %> -->
+                </div>
+              <!-- </li> -->
+          <% } %>
+      <!-- </ul> -->
+
+      <div class="like-button">
+        <div class="like-button-circle">
+          <img src="/styles/images/tinderlike.png" style="padding-left: 15px; padding-top: 20px;"width="90px" height="100px" alt="like" />
+        </div>
+      </div>
+
+      <div class="dislike-button">
+        <div class="dislike-button-circle">
+          <img src="/styles/images/tinderdislike.png" width="105px" height="110px" alt="like" />
+        </div>
+      </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+$( document ).ready(function() {
+
+  // (function() {
+  //   data = {
+  //
+  //     tinder: tinder
+  //
+  //   };
+  //   console.log(data);
+  //
+  //   var html = new EJS({url:'template.ejs'}).render(data);
+  //   document.querySelect("div#cardcontain").innerHTML = html;
+  // })();
+
+
+
+
+
+});
+
+</script>

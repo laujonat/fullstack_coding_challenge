@@ -1,0 +1,383 @@
+html {
+  
+}
+
+#front_header {
+  font-size: 15pt;
+  /*font-style: italic;*/
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+#cardcontain {
+  width: 375px;
+  margin: auto !important;
+  display: block;
+
+  height: 400px;
+
+  position: relative;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 9;
+}
+
+
+#profile {
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+
+  width: 360px;
+  height: 370px;
+  display: block;
+  /*margin-top: 10px;*/
+  /*margin-left: 10px;*/
+  background-size: 100% auto !important;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+
+  /*z-index: 1;*/
+}
+
+#profile img {
+    flex-shrink:0;
+    min-width:100%;
+    min-height:100%
+
+}
+
+
+
+img {
+   vertical-align:bottom;
+    position:relative;
+    /*z-index: 0;*/
+}
+
+
+
+.identifier {
+  color: #4E5251;
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 1.2em;
+
+  position: relative;
+  /*z-index: 10;*/
+  top: 4%;
+  left: 5%;
+
+}
+
+.mutualFriends {
+  color: #4E5251;
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 1.2em;
+
+  position: relative;
+  /*z-index: 10;*/
+  bottom: 1.5%;
+  left: 60%;
+}
+
+.numOfMutalInterests {
+  color: #4E5251;
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 1.2em;
+
+  position: relative;
+  /*z-index: 10;*/
+  /*top: 20%;*/
+  bottom: 7.5%;
+  left: 80%;
+}
+
+
+.card {
+  display: none;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5px 2px rgb(200,200,200) ;
+  color: #fff;
+
+
+
+  width: 360px;
+  height: 430px;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+
+}
+
+
+.like-button {
+    width:25%;
+    left: 70%;
+    top:250px;
+    background: transparent;
+    position: absolute;
+}
+
+
+.like-button-circle {
+    width: 100%;
+    height:0;
+    padding-bottom: 90%;
+    border-radius: 50%;
+    border:10px solid #F0F0F0;
+    overflow:hidden;
+
+    /*background: #4679BD;*/
+    box-shadow: 0 0 1px gray;
+    top:250px;
+
+    position: absolute;
+}
+
+.like-button-circle:active {
+  background:#D8D8D8 ;
+}
+
+.like-button a {
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+
+    text-align:center;
+    color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.dislike-button {
+    width:25%;
+    left: 28%;
+    top:250px;
+    background: transparent;
+    position: absolute;
+}
+.dislike-button-circle {
+    width: 100%;
+    height:0;
+    padding-bottom: 90%;
+    border-radius: 50%;
+    border:10px solid #F0F0F0;
+    overflow:hidden;
+    box-shadow: 0 0 1px gray;
+    top:250px;
+    position: absolute;
+}
+
+.dislike-button-circle:active {
+  background: #E8E8E8  ;
+}
+
+.dislike-button a {
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+
+    text-align:center;
+    color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+
+
+.status {
+
+  /*z-index: 2;*/
+
+}
+
+.rotate-left {
+  transform: rotate(35deg) scale(0.5);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+
+  transition: 0.9s;
+
+
+  margin-left: 400px;
+
+  opacity: 0;
+
+
+
+
+}
+.rotate-right {
+
+  transform: rotate(-35deg) scale(0.5);
+
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+  transition: 0.9s;
+  opacity: 0;
+  margin-left: -400px;
+
+
+
+}
+
+
+
+.like {
+  transform: rotate(35deg);
+  border-radius: 5px;
+  padding-top: 35%;
+  padding-right: 35%;
+
+  /*border: 5px solid green;*/
+  color: green;
+
+
+  text-transform: uppercase;
+
+
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+
+
+  text-shadow: none;
+}
+
+
+
+
+.dislike {
+  transform: rotate(-35deg);
+  border-radius: 5px;
+  padding-top: 35%;
+  padding-right: 35%;
+
+
+
+
+
+  /*border: 5px solid red;*/
+  color: red;
+  text-transform: uppercase;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  text-shadow: none;
+}
+
+
+
+
+
+#loginDetails_formContainer {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+/* input text color/font/italic/padding */
+#loginDetails_formContainer ::-webkit-input-placeholder {
+  font-size: 8pt;
+  padding-left: 10px;
+  }
+
+#loginDetails_formContainer ::-moz-placeholder {  /* Firefox 19+ */
+
+  font-size: 8pt;
+  padding-left: 10px;
+}
+
+#loginDetails_formContainer :-ms-input-placeholder {
+  font-family: Antenna-Light;
+  font-size: 8pt;
+  padding-left: 10px;
+}
+
+
+
+/* Taken from Bootstrap */
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  .form-signin-heading,
+  .checkbox {
+    margin-bottom: 30px;
+}
+
+
+#wrapper {
+  position:absolute;
+  left: 10%;
+  top: 20%;
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+  #loginDetails_btnsContainer {
+    margin: auto;
+  }
+  #loginDetails_formContainer {
+    width: 90%;
+    border: 1px solid transparent;
+  }
+    .loginDetails_input {
+      width: 100%;
+    }
+}
+
+/* iPHONE6 MEDIA QUERIES */
+@media screen and (max-width: 375px) {
+}
+
+/* iPHONE5 MEDIA QUERIES */
+@media screen and (max-width: 320px) {
+}

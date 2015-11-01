@@ -1,0 +1,44 @@
+<div ng-controller="CardController as cardCtrl">
+<!-- // Aliasing CardController as cardCntrl -->
+
+
+
+  <div id="cardcontain">
+
+        <!-- // empty when first load page -->
+        <!-- // Using 'cards' directive  -->
+        <!-- <div ng-controller="CardController"></div> -->
+        <cards cards="cardCtrl.cards" next="cardCtrl.goNext" action="cardCtrl.action"></cards>
+        <!-- cards.js -->
+
+        <!-- scope: {
+          cards: '=',
+          next: '=',
+          action: '=?'
+        }, -->
+
+
+        <div class="like-button" ng-click="cardCtrl.like()">
+          <div class="like-button-circle">
+            <img src="/styles/images/tinderlike.png" style="padding-left: 11%; padding-right: 10%; padding-top: 20%;" width="100%" alt="like" />
+          </div>
+        </div>
+
+
+
+        <div class="dislike-button" ng-click="cardCtrl.dislike()">
+          <div class="dislike-button-circle">
+            <img src="/styles/images/tinderdislike.png" style="padding-top: 10%;" width="100%" alt="like" />
+          </div>
+        </div>
+
+
+
+
+
+  </div>
+
+
+
+
+</div>

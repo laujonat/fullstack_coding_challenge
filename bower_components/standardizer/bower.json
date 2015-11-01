@@ -1,0 +1,19 @@
+{
+  "name": "standardizer",
+  "version": "1.0.0",
+  "homepage": "https://github.com/inbep/standardizer",
+  "authors": [
+    "Sérgio Rafael Siqueira <sergio@inbep.com.br>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3"
+  }
+}

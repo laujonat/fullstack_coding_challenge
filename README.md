@@ -1,39 +1,51 @@
-Tinder Full Stack Coding Challenge
-===================================
+# TinderChallenge
 
-### Recreate the Tinder card stack in html/js/css.
+a [Sails](http://sailsjs.org) application
 
-<img src="http://i.imgur.com/nh8oB6C.gif" />
+Jonathan Lau Tinder Challenge
+-----------------------------
 
-**At a minimum, this must:**
+ Hello! This is my submission for the Full Stack Tinder Coding Challenge.
 
-* Recognize swipe left and swipe right gestures (we recommend hammer.js for gesture recognition)
-* Render properly on an iPhone 6
-* Populate "cards" using data from a backend API endpoint (this can be static json)
+ This application was created in Sails.js, utilizing the AngularJS library along with Hammer.js for the swiping gestures!
 
-**Bonus points for:**
+ Extras Included
+ ---------------
 
-* Doing it all in vanilla js
-* Using node.js, go, or python for your backend
-* Making the site responsive so it works well on desktop and arbitrary screen sizes
-* Including a gamepad
-* Bringing up the It's a match! screen on right swipe
-* Adding cool features
 
-**Third Party Libraries:**
+  - Added two buttons: Like and Dislike.  Clicking on these buttons will essentially do the same as swipping left and right.
+  - Swipping right displays a LIKE across the user profile, while swipping left displays a NOPE across the profile.
+  - Displays the number of mutual interests based on user on each card.
 
-We use react and angular internally, so including one of those in your submission is a plus.
 
-If you're pressed for time you can submit your solution with a library like https://github.com/gajus/angular-swing doing the heavy lifting of card swiping logic, although we will deduct points for that. Reading the source of such a library for "inspiration" is totally fine though.
+Questions!
+----------
 
-**Evaluation:**
+   * How long this took me:<br />
+   My experience with Angular is limited, so a lot of time was spent reading through the documentation and learning about
+      the library.  
 
-We will be evaluating your submission on both the efficiency and readability of your code and the degree to which your product matches the native experience.
+      In total, working on and off this project throughout the week, I'd say it took me a total of 12 hours or so to complete.
+      Through this process, I hope this demonstrates my ability to learn quickly along with the ability to juggle
+      multiples projects with time contraints.  (It's been a rough week with exams and other work commitments haha)
 
-Please submit your solution as a pull request to this repository or email a zip directly to your recruiter, and include in it:
+* What you would change/add if you had more time:<br />
+  There's a few issues with this project that stumped me.. and due to time contraints I won't be able to fix it
+  with the time contraint.  <br /><br />
+  1) When you click the buttons, it changes the scope state of the 'goNext' and 'action' attributes from CardController.js.
+  The problem arises when you swipe, then click the button, since the scope state is still unchanged, you have to click
+  the button again, to change the state.<br /><br />
+  2) Styling and animation.  There's a few styling issues I wish I could have addressed, such as the like and dislike animations.
+        If I had more time I could have done a bit more reading into the different libraries used to make this work correctly.  
+        I would have definitely fixed a lot of the css issues if I had more time...
 
-* a link to your working example
-* how long this took you
-* what you would add/change if you had more time
 
-Thanks, and have fun!
+The Application
+----------
+    * How to Run
+    I was only able to test this program on localhost.  To run, you'll have to install Sails.js, which is similar to express, and
+      then simply perform [sails lift] in the terminal to run.  Make sure you have mongo enabled!
+
+    The application is routed to the root of the application: http://localhost:1337/
+    Due to time contraints, I was only able to test if this renders on iPhone6 through an iphone simulator
+      I used: http://www.responsinator.com/

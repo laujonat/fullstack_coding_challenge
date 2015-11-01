@@ -1,0 +1,29 @@
+<div class="card" style="display: block;">
+  <!-- THIS MUST BE AT THE TOP  -->
+  <!-- Get this error: "Template for directive 'card' must have exactly one root element. templates/card.html" -->
+
+  <!-- FOR EACH CARD -->
+
+
+  <div id="profile" style="display: block;">
+    <img style="height: 100%; overflow: hidden" ng-src='{{ ngModel.imgURL}}' />
+    <!-- prevents the browser from loading the image before the handlebars get parsed.   -->
+  </div>
+
+
+  <div class="identifier" style="display: block;">
+    {{ ngModel.name }},
+    {{ ngModel.age }}
+  </div>
+
+  <div class="mutualFriends" style="display: block;">
+    <img src="/styles/images/mutualfriends.png" style="padding-bottom:1%;width:8%;height:9%;">
+    {{ ngModel.mutualfriends }}
+  </div>
+
+  <div class="numOfMutalInterests" style="display:block;">
+    <img src="/styles/images/mutualinterests.png" style="padding-bottom:1%;width:7%;height:8%;">
+    {{ ngModel.mutualIntrests }}
+  </div>
+
+</div>
